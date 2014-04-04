@@ -6,9 +6,11 @@ ACTIVE_ADMIN_PATH = File.dirname(__FILE__) unless defined?(ACTIVE_ADMIN_PATH)
 
 require File.expand_path('spec/support/detect_rails_version', ACTIVE_ADMIN_PATH)
 
-rails_version = detect_rails_version
+rails_version = '3.2.16'
 gem 'rails', rails_version
 gem 'bourbon'
+gem 'polyamorous', '0.6.4'
+gem 'actionpack', '3.2.16'
 
 case rails_version
 when /^3\.0/
